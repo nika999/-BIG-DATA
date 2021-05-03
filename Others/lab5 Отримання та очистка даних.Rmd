@@ -15,14 +15,19 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Ви повинні створити один R-скрипт, який називається run_analysis.R, який виконує наступні дії.
+
 1. Об’єднує навчальний та тестовий набори, щоб створити один набір даних.
+
 2. Витягує лише вимірювання середнього значення та стандартного відхилення (mean and standard deviation) для кожного вимірювання.
+
 3. Використовує описові назви діяльностей (activity) для найменування діяльностей у наборі даних.
+
 4. Відповідно присвоює змінним у наборі даних описові імена.
+
 5. З набору даних з кроку 4 створити другий незалежний акуратний набір даних (tidy dataset) із середнім значенням для кожної змінної для кожної діяльності та кожного суб’єкту (subject).
 
 
-1. Завантажуємо назви діяльностей (activity) та назви стовбців, а також залишаємо лише середнє значення та стандартне відхилення (mean and standard deviation)
+Завантажуємо назви діяльностей (activity) та назви стовбців, а також залишаємо лише середнє значення та стандартне відхилення (mean and standard deviation)
 
 ```{r}
 if (!require("data.table")) {
@@ -48,7 +53,7 @@ extract_features <- grepl("mean|std", features)
 
 ```
 
-2. Завантажуємо тестові дані
+Завантажуємо тестові дані
 
 ```{r}
 # Load and process X_test & y_test data.
@@ -71,7 +76,7 @@ test_data <- cbind(as.data.table(subject_test), y_test, X_test)
 
 ```
 
-3. Завантажуємо тренувальні дані
+Завантажуємо тренувальні дані
 
 ```{r}
 # Load and process X_train & y_train data.
@@ -94,7 +99,7 @@ names(subject_train) = "subject"
 train_data <- cbind(as.data.table(subject_train), y_train, X_train)
 ```
 
-4. Об'єднуємо дані:
+Об'єднуємо дані:
 
 ```{r}
 # Merge test and train data
