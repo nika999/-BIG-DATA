@@ -12,4 +12,20 @@
 'Grands Prix entered', 'World Championships', 'Highest race finish',
 'Highest grid position',  'Date of birth', 'Place of birth'
 
+Назви та типи стовпців:
+
+Name                     object
+Biography                object
+Team                     object
+Country                  object
+Podiums                  object
+Points                   object
+Grands Prix entered      object
+World Championships      object
+Highest race finish      object
+Highest grid position    object
+Date of birth            object
+Place of birth           object
+dtype: object
+
 
