@@ -1,0 +1,15 @@
+Завдання 1 
+
+Дати опис набору даних та звідки взятий цей набір даних. По можливості дайте посилання:
+
+Біографія автогонщиків
+
+Набір даних був спарсований із сайту: https://www.formula1.com/en/drivers.html
+
+Включає такі стовпці, назви стовпців чудово описують цей набір даних:
+
+'Name','Biography', 'Team', 'Country', 'Podiums', 'Points', 
+'Grands Prix entered', 'World Championships', 'Highest race finish',
+'Highest grid position',  'Date of birth', 'Place of birth'
+
+
